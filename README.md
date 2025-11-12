@@ -489,7 +489,7 @@ newsletter.email.sender=gmail
 
 ---
 
-**Author**: Nitish Joshi
+**Author**: Nitish Joshi 
 **Version**: 1.0.0  
 **Last Updated**: November 12, 2025  
 **License**: Apache License
