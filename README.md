@@ -1,6 +1,6 @@
 # Newsletter Distribution Service
 
-A scalable, idempotent, and event-driven **Newsletter Scheduling and Subscription Service** built with **Spring Boot**, supporting **bulk operations**, **Kafka-based dispatch**, **multi-threaded scheduling**, and **horizontal scalability** on **AWS**.
+A scalable, idempotent, and event-driven **Newsletter Scheduling and Subscription Service** built with **Spring Boot**, supporting **bulk operations**, **Kafka-based dispatch**, **multi-threaded scheduling**, and **horizontal scalability**.
 
 The service allows:
 - Creating Topics with specified names
