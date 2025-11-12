@@ -61,11 +61,9 @@ The service follows a **modular, event-driven architecture** designed for scalab
 |------|------------|-----|
 | **Cron Scheduler** | `@Scheduled(cron = "...")` | For periodic content dispatch every minute/hour |
 | **Fixed Rate** | `@Scheduled(fixedRate = 30000)` | Default fallback scheduler every 30s |
-| **Async Tasks** | `@Async` | Concurrent email dispatch per subscriber |
 
-### Kafka Topics
+### Topics
 - **newsletter-events** → Published when content is ready to be sent.
-- **newsletter-status** → Optional consumer for tracking send status.
 
 ---
 
