@@ -142,11 +142,13 @@ public enum Status {
     PENDING, SENT, FAILED
 }
 ```
+---
 
 ## Indexing
 
 **Composite index (status, scheduled_time) ensures that range query is O(log N) instead of full table scan**
 
+---
 
 ## API Reference
 
