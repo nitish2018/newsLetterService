@@ -75,6 +75,7 @@ The service follows a **modular, event-driven architecture** designed for scalab
 |---------|----------|
 | **Idempotency** | `(email, topic_id)` unique constraint in DB + deduplication in bulk requests |
 | **Bulk Processing** | Uses `saveAll()` for efficient inserts; deduplicates repeated entries in input |
+| **Indexing** | Composite index created on `(status, scheduled_time)` which provides range queries in O(log n + k) times instead of full table scan |
 | **Thread Safety** | No shared mutable state; relies on database & stateless services |
 | **Distributed Safety** | Enforced at DB-level and through application-level checks |
 | **Error Handling** | Structured JSON responses with `"status"` keys |
